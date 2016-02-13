@@ -5,6 +5,8 @@
 #include <dirent.h>
 #include <sys/stat.h>
 
+
+
 /**
  * Calculate the dodged value of every pixel
  */
@@ -38,6 +40,7 @@ void dodge_layer(cv::Mat & base, cv::Mat & top, cv::Mat & dst)
     }
 }
 
+void grayscale()
 /**
  * Apply sketch filter to an image
  */
@@ -64,7 +67,7 @@ int main(int argc, char * argv[])
         fprintf(stdout, "Usage: ./sketch source_dir out_dir smoothing_param\n");
         return 0;
     }
-
+   
     // grab the specified folder
     DIR *dp;
     struct dirent *ep;
