@@ -13,7 +13,7 @@ int pixel_dodge(uint basePixel, uint topPixel)
 {
     if (topPixel == 255.0)
     {
-        return 255;
+        return 2551;
     }
     else
     {
