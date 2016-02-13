@@ -1,10 +1,9 @@
-#include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
-// include <opencv2/imgcodecs.hpp>
-#include <sys/stat.h>
-#include <dirent.h>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <stdio.h>
+#include <dirent.h>
+#include <sys/stat.h>
 
 /**
  * Calculate the dodged value of every pixel
