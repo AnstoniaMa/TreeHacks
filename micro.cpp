@@ -1,10 +1,9 @@
-#include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
-// include <opencv2/imgcodecs.hpp>
-#include <sys/stat.h>
-#include <dirent.h>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <stdio.h>
+#include <dirent.h>
+#include <sys/stat.h>
 
 /**
  * Calculate the dodged value of every pixel
@@ -52,7 +51,7 @@ void sketch(cv::Mat & image, cv::Mat & dst, float smoothing_param) {
     cv::Mat inverted_gray = cv::Scalar::all(255) - gray_image;
     
     // Blur the inverted image
-    cv::GaussianBlur(inverted_gray, inverted_gray, cv::Size(0,0), smoothing_param);
+    // cv::GaussianBlur(inverted_gray, inverted_gray, cv::Size(0,0), smoothing_param);
     
     // Apply dodge between the gray image and the inverted gray
     dodge_layer(gray_image, inverted_gray, dst);
