@@ -5,8 +5,6 @@
 #include <dirent.h>
 #include <sys/stat.h>
 
-
-
 /**
  * Calculate the dodged value of every pixel
  */
