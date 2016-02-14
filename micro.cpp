@@ -38,10 +38,11 @@ void dodge_layer(cv::Mat & base, cv::Mat & top, cv::Mat & dst)
     }
 }
 
-void grayscale()
+void grayscale() {}
 /**
  * Apply sketch filter to an image
  */
+
 void sketch(cv::Mat & image, cv::Mat & dst, float smoothing_param) {
     
     // Create grayscale image
