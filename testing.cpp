@@ -49,9 +49,10 @@ void invert(Mat src) {
   Size s = src.size();
   height = s.height;
   width = s.width;
-  for (int i = 0; j++; i < height) {
-    for (int j = 0; j++; j < width) {
-      
+
+  for (int i = 0; i < height; i++) {
+    for (int j = 0; j < width; j++) {
+      for (int k = 0; k < ) {
     }
   }
 }
